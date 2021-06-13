@@ -1,0 +1,80 @@
+body{
+    display: grid;
+    grid-template-columns: 100%;
+    width: 100%;
+    background-color: rgb(214, 133, 160);
+    animation-name: MR;
+    animation-duration: 2s;
+    font-family: sans-serif;
+    color:rgb(109, 103, 103) ;
+    font-size: 20px;
+    margin: 10px;
+
+}
+h1{
+    text-align: center;
+}
+
+.f{
+    width: 350px;
+    height: 200px;
+}
+
+.img{
+    float: right;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+img{
+    width: 350px;
+    height: 200px;
+    margin: 2px;
+    transition: 0.5s all;
+}
+img:hover{
+    width: 400px;
+    height: 250px;
+}
+.foot{
+    background-color: darkgray;
+    color: rgb(95, 41, 59);
+    text-align: center;
+    padding: 5px;
+    margin-top: 5px;
+}
+.pa2{
+    
+    background-color: darkgray;
+    color: rgb(95, 41, 59);
+    text-align: center;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px; 
+    
+}
+.MR{
+    background-color: darkgray;
+    color: rgb(95, 41, 59);
+    padding: 7px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+
+.be, .she{
+    background-color: darkgray;
+    color: rgb(95, 41, 59);
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.QQ{
+    margin-right: 4px ;
+
+}
+@keyframes MR{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
