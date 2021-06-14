@@ -3,18 +3,39 @@ body{
     grid-template-columns: 100%;
     width: 100%;
     background-color: rgb(214, 133, 160);
-    animation-name: MR;
-    animation-duration: 2s;
     font-family: sans-serif;
     color:rgb(109, 103, 103) ;
     font-size: 20px;
     margin: 10px;
 
 }
+
+#content{
+    animation-name: fadein;
+    animation-duration: 5s;
+}
+
 h1{
+    text-align: center;
+
+}
+
+.pa{
     text-align: center;
 }
 
+.MR, .pa{
+    background-color: darkgray;
+    color: rgb(95, 41, 59);
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.QQ{
+    margin-right: 6px ;
+
+}
 
 .img{
     float: right;
@@ -29,48 +50,22 @@ img{
     margin: 2px;
     transition: 0.5s all;
 }
+
 img:hover{
     width: 400px;
     height: 250px;
 }
+
 .foot{
     background-color: darkgray;
     color: rgb(95, 41, 59);
     text-align: center;
-    padding: 5px;
-    margin-top: 5px;
-}
-.pa2{
-    
-    background-color: darkgray;
-    color: rgb(95, 41, 59);
-    text-align: center;
-    padding: 5px;
-    margin-top: 5px;
-    margin-bottom: 5px; 
-    
-}
-.MR{
-    background-color: darkgray;
-    color: rgb(95, 41, 59);
-    padding: 7px;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-top: 2px;
+    animation-name: fadein;
+    animation-duration: 5s;
 }
 
-
-.be, .she{
-    background-color: darkgray;
-    color: rgb(95, 41, 59);
-    padding: 5px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
-.QQ{
-    margin-right: 4px ;
-
-}
-@keyframes MR{
+@keyframes fadein{
     from{opacity: 0;}
     to{opacity: 1;}
 }
