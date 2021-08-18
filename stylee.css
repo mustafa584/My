@@ -1,0 +1,76 @@
+body{
+    display: grid;
+    grid-template-columns: 100%;
+    width: 100%;
+    background-color: rgb(214, 133, 160);
+    font-family: sans-serif;
+    color:rgb(109, 103, 103) ;
+    font-size: 20px;
+    margin: 10px;
+
+}
+
+#content{
+    animation-name: fadein;
+    animation-duration: 5s;
+}
+
+h1{
+    text-align: center;
+
+}
+
+.pa{
+    text-align: center;
+    background-color: darkgray;
+    color: rgb(95, 41, 59);
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.MR{
+    background-color: darkgray;
+    color: rgb(95, 41, 59);
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.QQ{
+    margin-right: 6px ;
+
+}
+
+.img{
+    float: right;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+img{
+    width: 350px;
+    height: 200px;
+    margin: 2px;
+    transition: 0.5s all;
+}
+
+img:hover{
+    width: 400px;
+    height: 250px;
+}
+
+.foot{
+    background-color: darkgray;
+    color: rgb(95, 41, 59);
+    text-align: center;
+    margin-top: 2px;
+    animation-name: fadein;
+    animation-duration: 5s;
+}
+
+@keyframes fadein{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
