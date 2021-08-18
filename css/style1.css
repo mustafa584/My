@@ -242,6 +242,11 @@ section.home {
   .videos {
     grid-template-columns: 1fr;
   }
+  
+  .videos .video {
+    width: 350px;
+    height: 275px;
+  }
 }
 @media (max-width: 760px) {
   .logo {
