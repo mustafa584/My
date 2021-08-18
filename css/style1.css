@@ -48,6 +48,11 @@ p {
   font-size: 1.2rem;
   margin-top: 20px;
   font-weight: 500;
+  background-color: black;
+  color: rgb(214, 212, 212);
+  opacity: 0.6;
+  padding: 10px;
+  border-radius: 5px;
 }
 
 section {
