@@ -1,0 +1,266 @@
+@font-face {
+  font-family: "Poppins";
+  src: url(../Poppins/Poppins-ExtraLightItalic.ttf);
+  font-style: normal;
+  font-weight: 300;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.body-home {
+  background: rgba(0, 0, 0, 0.2) url(../img/undraw_love_xfcv.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: darken;
+}
+
+.body-fav {
+  background: rgba(0, 0, 0, 0.2) url(../img/wickedbackground.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-blend-mode: darken;
+}
+
+.body-work {
+  background: url(../img/wickedbackground0.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+html {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  color: #111;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+p {
+  font-size: 1.2rem;
+  margin-top: 20px;
+  font-weight: 500;
+}
+
+section {
+  display: flex; /* we write flex direction
+  because the defualt is row which we need
+  for .home and for general design wee need
+  column */
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  padding: 70px;
+  margin-top: 60px;
+}
+
+section.home {
+  flex-direction: row;
+}
+
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  padding: 10px 30px;
+  background-color: #f60f20;
+  margin-top: 20px;
+  font-weight: 800;
+}
+
+.btn:hover {
+  transform: scale(0.97);
+}
+
+.logo {
+  position: absolute;
+  top: 10px;
+  left: 70px;
+  font-size: 2.5rem;
+  font-weight: 1000;
+  z-index: 40;
+}
+
+.togle {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 50px;
+  height: 50px;
+  background: #f60f20 url(../img/menu.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 30px;
+  cursor: pointer;
+  z-index: 30;
+}
+
+.togle.active {
+  background: #f60f20 url(../img/clos.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 20px;
+}
+
+.navigation {
+  position: fixed;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  height: 100%;
+  background: white;
+  z-index: 20;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.made {
+  position: fixed;
+  bottom: 10px;
+}
+
+.navigation.active {
+  left: 0;
+}
+
+.navigation ul {
+  list-style: none;
+  text-align: center;
+}
+
+.navigation ul li a {
+  text-decoration: none;
+  color: #111;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.navigation ul li a:hover {
+  color: #f60f20;
+}
+
+.navigation .social {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px; /* here we add width and 
+  hight to div to let the device know
+   howto center content according to what? */
+  height: 100%;
+}
+
+.navigation .social a {
+  display: inline-block;
+  transform: scale(0.5);
+}
+
+.home-content {
+  position: relative;
+  z-index: 10;
+  max-width: 600px;
+}
+
+.videos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.videos .video {
+  position: relative;
+  width: 480px;
+  height: 315px;
+  transition: 0.5s all;
+}
+
+.videos .video:hover {
+  transform: scale(1.05);
+}
+
+.video img {
+  cursor: pointer;
+  position: absolute;
+  width: 60px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.5;
+}
+
+.video img:hover {
+  opacity: 1;
+}
+
+.porti {
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.porti .item {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.porti .item img {
+  width: 100%;
+  height: 100%;
+  filter: grayscale(100%);
+  transition: 0.5s all;
+}
+
+.porti .item:hover img {
+  filter: grayscale(0%);
+  transform: scale(1.1);
+}
+
+@media (max-width: 1060px) {
+  .body-home {
+    background-size: auto;
+    background-position: center;
+  }
+
+  .services {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .videos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 760px) {
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  .services {
+    grid-template-columns: 1fr;
+  }
+
+  .services .service {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  }
+
+  .videos {
+    grid-template-columns: 1fr;
+  }
+}
