@@ -241,16 +241,6 @@ section.home {
 
   .videos {
     grid-template-columns: 1fr;
-    margin: 0;
-    padding: 0;
-    gap: 0;
-  }
-  .videos .video {
-    transform: scale(0.5);
-  }
-
-  .videos .video:hover {
-    transform: scale(0.7);
   }
 }
 @media (max-width: 760px) {
@@ -260,5 +250,13 @@ section.home {
 
   .videos {
     grid-template-columns: 1fr;
+  }
+
+  .videos .video {
+    transform: scale(0.7);
+  }
+
+  .videos .video:hover {
+    transform: scale(0.7);
   }
 }
