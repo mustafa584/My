@@ -48,6 +48,9 @@ p {
   font-size: 1.2rem;
   margin-top: 20px;
   font-weight: 500;
+}
+
+.B {
   background-color: black;
   color: rgb(214, 212, 212);
   opacity: 0.6;
